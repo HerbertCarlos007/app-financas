@@ -1,18 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Header from '../../components/Header';
 
 export default function Home() {
-  return (
-    <View style={styles.container}>
-      <Text>Pagina Home</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <View style={styles.container}>
+            <Header name='Herbert Carlos' />
+            <Text>Pagina Home</Text>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+    },
 });
